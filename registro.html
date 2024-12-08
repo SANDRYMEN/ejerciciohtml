@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro para Conferencia</title>
+ </head>
+ <body>
+
+    <h1>Formulario de registro para conferencia</h1>
+    <form action="/submit.html"method=¨POST¨>
+        <!--Nombre completo-->
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre"name="nombre" placeholder="Escribe tu nombre completo"required>
+
+        <br><br>
+
+        <!--Correo Electronico-->
+        <label for="email">correo electronico</label>
+        <input type="email" name="email" id="email"placeholder="ejemplo@correo.com"required>
+
+        <br><br>
+
+        <!--Numero de telefono-->
+
+        <label for="telefono">Numero de telefono</label>
+        <input type="number" id="telefono" name="telefono"`placeholder="Ejemplo: 123456789"required>
+
+        <br></br>
+
+        <!--Fecha de Nacimiento-->
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha">
+        <br></br>
+
+        <!--Genero-->
+
+        <label> Genero: </label>
+        <input type="radio" name="genero" id="masculino"value="mMasculino" required>
+        <label for="masculino"> Masculino</label>
+        <input type="radio" name="genero" id="femenino" value="femenino"required>
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="genero" id="otro"value="otro"required>
+        <label for="otro">otro</label>
+
+        <br></br>
+
+        <!--Intereses-->
+
+        <label> Intereses:</label>
+        <input type="checkbox" name="intereses" id="tecnologia"value="Tecnologia">
+        <label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" name="intereses" id="ciencia"value="Ciencia">
+        <label for="ciencia">Ciencia</label>
+        <input type="checkbox" name="intereses" id="arte"value="Arte">
+        <label for="arte">Arte</label>
+        <input type="checkbox" name="intereses" id="Negocios"value="Negocios">
+        <label for="negocios">Negocios</label>
+
+        <br><br>
+
+        <!--Pais de residencia-->
+
+        <label for="pais">Pais de Residencia</label>
+        <select name="pais" id="pais">
+            <option value="">Selecciona tu pais</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Mexico">Mexico</option>
+        </select>
+        <br><br>
+
+        <!--Mensaje adicional-->
+        <label for="Mensaje">Mensaje adicional</label>
+        <textarea name="mensaje" id="mensaje"rows="4" cols="48"placeholder="Escriba algun comentario extra"></textarea>
+        <br><br>
+
+        <!--aceptar recibir novedades-->
+        <label for="novedades">Acepto recibir novedades por e-mail</label>
+        <input type="checkbox" name="novedades" id="novedades">
+        <br><br>
+
+        <!-- Botones-->
+
+        <button type="submit">Enviar</button>
+        <button type="reset">limpiar</button>
+
+
+
+    </form>
+   
+
+
+ </body>
+ </html>
